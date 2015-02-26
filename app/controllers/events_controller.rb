@@ -9,8 +9,12 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.new(event_params)
-    @event.save
-    redirect_to events_path
+    if @event.save
+      redirect_to events_path, notice: 'New event has been successfully added!'
+    else
+      flash.now.alert = 'Form incomplete - please ensure that you have filled out all fields.'
+      render 'new'
+    end
   end
 
   private

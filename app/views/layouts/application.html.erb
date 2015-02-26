@@ -12,6 +12,16 @@
   </head>
 
   <body>
+    <% if flash[:notice] %>
+      <div data-alert class="alert-box success">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
+    <% if flash[:alert] %>
+      <div data-alert class="alert-box alert">
+        <%= flash[:alert] %>
+      </div>
+    <% end %>
 
     <%= yield %>
     <%= javascript_include_tag "application" %>
