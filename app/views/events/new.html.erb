@@ -1,0 +1,20 @@
+<h1>Add event</h1>
+<%= form_for @event, html: {role: "form"} do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+  <%= f.label :venue %>
+  <%= f.text_area :venue %>
+   <p>
+    <%= f.label :date %>
+    <%= f.date_select :date %>
+  </p>
+   <p>
+    <%= f.label :time %>
+    <%= f.time_select :time %>
+  </p>
+  <p>
+    <%= f.submit 'Add new event', class: 'button success' %>
+  </p>
+<% end %>
