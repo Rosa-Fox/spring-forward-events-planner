@@ -17,7 +17,7 @@
         <td><%= event.name %></td>
         <td><%= event.venue %></td>
         <td><%= event.date.strftime("%d/%m/%Y") %></td>
-        <td><%= event.time %></td>
+        <td><%= event.time.strftime("%H:%M %P") %></td>
         <td><%= link_to 'Edit', edit_event_path(event) %></td>
         <td><%= link_to 'Delete', event, :method => 'delete' %></td>
       </tr>
