@@ -7,6 +7,8 @@
       <th>Venue</th>
       <th width="150">Date</th>
       <th width="150">Time</th>
+      <th width="150">Edit</th>
+      <th width="150">Delete</th>
     </tr>
   </thead>
   <tbody>
@@ -16,6 +18,7 @@
         <td><%= event.venue %></td>
         <td><%= event.date %></td>
         <td><%= event.time %></td>
+        <td><%= link_to 'Edit', edit_event_path(event) %></td>
       </tr>
       <% end %>
   </tbody>
