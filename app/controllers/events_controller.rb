@@ -18,9 +18,16 @@ class EventsController < ApplicationController
   end
 
   def update
+   event = Event.find params[:id]
+    if event.update_attributes(event_params)
+      redirect_to events_path, :notice => 'Your event information has successfully been updated.'
+    else
+      redirect_to edit_event_path, :alert => 'There was an error updating your event information - please ensure that all fields have been completed.'
+    end
   end
 
   def edit
+    @event = Event.find params[:id]
   end
 
   private
