@@ -10,13 +10,13 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
     <% @events.each do |event| %>
-      <td><%= event.name %></td>
-      <td><%= event.venue %></td>
-      <td><%= event.date %></td>
-      <td><%= event.time %></td>
+      <tr>
+        <td><%= event.name %></td>
+        <td><%= event.venue %></td>
+        <td><%= event.date %></td>
+        <td><%= event.time %></td>
+      </tr>
       <% end %>
-    </tr>
   </tbody>
 </table>
