@@ -12,6 +12,17 @@
   </head>
 
   <body>
+    <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1><%= link_to 'Spring Forward Events Planner', new_event_path %></h1>
+      </li>
+    </ul>
+  <section class="top-bar-section">
+    <ul class="right">
+      <li class="active"><%= link_to 'Return home', root_path %></li>
+    </ul>
+</nav>
     <% if flash[:notice] %>
       <div data-alert class="alert-box success">
         <%= flash[:notice] %>
