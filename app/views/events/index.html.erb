@@ -19,6 +19,7 @@
         <td><%= event.date %></td>
         <td><%= event.time %></td>
         <td><%= link_to 'Edit', edit_event_path(event) %></td>
+        <td><%= link_to 'Delete', event, :method => 'delete' %></td>
       </tr>
       <% end %>
   </tbody>
