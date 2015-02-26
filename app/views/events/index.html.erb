@@ -11,22 +11,12 @@
   </thead>
   <tbody>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+    <% @events.each do |event| %>
+      <td><%= event.name %></td>
+      <td><%= event.venue %></td>
+      <td><%= event.date %></td>
+      <td><%= event.time %></td>
+      <% end %>
     </tr>
   </tbody>
 </table>
