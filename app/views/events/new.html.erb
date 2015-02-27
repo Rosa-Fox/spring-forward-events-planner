@@ -1,20 +1,42 @@
-<h1><img src="/img/logo.png">Add Event</h1>
+<div class="twelve columns">
+  <div class="row">
+    <div class="large-4 columns" %>
+     <br>
+     <h1><img src="/img/logo.png">Add Event</h1>
+     </br>
+    </div>
+  </div>
+</div>
 <%= form_for @event, html: {role: "form"} do |f| %>
-  <p>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </p>
-  <%= f.label :venue %>
-  <%= f.text_area :venue %>
-   <p>
-    <%= f.label :date %>
-    <%= f.date_select :date %>
-  </p>
-   <p>
-    <%= f.label :time %>
-    <%= f.time_select :time %>
-  </p>
-  <p>
-    <%= f.submit 'Add new event', class: 'button success' %>
-  </p>
+  <div class="row text-center">
+    <div class="large-12 columns" %>
+      <div class="row text-center">
+        <div class="large-4 columns">
+          <%= f.label :name %>
+          <%= f.text_field :name %>
+        </div>
+      </div>
+    <div class="row text-center">
+      <div class="large-4 columns">
+        <%= f.label :venue %>
+        <%= f.text_field :venue %>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="large-2 columns">
+        <%= f.label :date %>
+        <%= f.date_select :date %>
+       </div>
+    <div class="large-2 columns">
+      <%= f.label :time %>
+      <%= f.time_select :time %>
+    </div>
+   <div class="row ">
+      <div class="large-12 columns" %>
+        <%= f.submit 'Add new event', class: 'button success expand' %>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
 <% end %>
