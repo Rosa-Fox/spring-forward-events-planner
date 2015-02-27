@@ -1,28 +1,22 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The Spring Forward Events Planner is an example of a basic Ruby on Rails application.
 
-Things you may want to cover:
+I have created it for people to clone and use as a reference to get started on their own Rails projects following my introductory Rails talk at [She Codes Brighton - Tech in Ten](https://ti.to/shecodesbrighton/techinten).
 
-* Ruby version
+# Getting started
 
-* System dependencies
+* Set up Ruby, Rails and MySQL. Currently I am using Rails 4.2.0 and Ruby 2.1.5. 
+I would recommend [this](https://gorails.com/setup/osx/10.10-yosemite) set up guide for OSX Yosemite users.
 
-* Configuration
+* Use your terminal to clone the repository: `git clone https://github.com/Rosa-Fox/spring-forward-events-planner`.
 
-* Database creation
+* `cd` into the `spring-forward-events-planner` directory.
 
-* Database initialization
+* Run `bundle install` to download dependencies.
 
-* How to run the test suite
+* Start the rails server by typing `rails s` into your terminal within the `spring-forward-events-planner` directory.
 
-* Services (job queues, cache servers, search engines, etc.)
+* Navigate to `localhost:3000`to view the web app in a browser.
 
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* View the code in a text editor.
