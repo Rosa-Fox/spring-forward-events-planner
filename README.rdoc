@@ -15,6 +15,8 @@ I would recommend [this](https://gorails.com/setup/osx/10.10-yosemite) set up gu
 
 * Run `bundle install` to download dependencies.
 
+* Run migrations using: `rake db:migrate`.
+
 * Start the rails server by typing `rails s` into your terminal within the `spring-forward-events-planner` directory.
 
 * Navigate to `localhost:3000`to view the web app in a browser.
