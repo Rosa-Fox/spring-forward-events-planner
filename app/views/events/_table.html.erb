@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="large-12 columns">
+    <table>
+      <thead>
+        <tr>
+          <th width="200">Event name</th>
+          <th width="150">Venue</th>
+          <th width="150">Date</th>
+          <th width="150">Time</th>
+          <th width="150"</th>
+          <th width="150"</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @events.each do |event| %>
+          <tr>
+            <td ><%= event.name %></td>
+            <td><%= event.venue %></td>
+            <td><%= event.date.strftime("%d/%m/%Y") %></td>
+            <td><%= event.time.strftime("%H:%M %P") %></td>
+            <td><%= link_to 'Edit', edit_event_path(event) %></td>
+            <td><%= link_to 'Delete', event, :method => 'delete' %></td>
+          </tr>
+          <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
