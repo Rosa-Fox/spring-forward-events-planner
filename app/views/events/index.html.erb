@@ -1,4 +1,5 @@
-<h1>Spring Forward Events Planner!</h1>
+<h1><img src="/img/logo.png">Spring Forward Events Planner!</h1>
+<br>
 <%= link_to 'Add new event', new_event_path, class: 'button success' %>
 <table>
   <thead>
@@ -7,14 +8,14 @@
       <th>Venue</th>
       <th width="150">Date</th>
       <th width="150">Time</th>
-      <th width="150"></th>
-      <th width="150"></th>
+      <th width="150"</th>
+      <th width="150"</th>
     </tr>
   </thead>
   <tbody>
     <% @events.each do |event| %>
       <tr>
-        <td><%= event.name %></td>
+        <td ><%= event.name %></td>
         <td><%= event.venue %></td>
         <td><%= event.date.strftime("%d/%m/%Y") %></td>
         <td><%= event.time.strftime("%H:%M %P") %></td>
